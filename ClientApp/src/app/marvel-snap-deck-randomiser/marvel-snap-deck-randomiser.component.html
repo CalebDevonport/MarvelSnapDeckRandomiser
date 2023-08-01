@@ -1,0 +1,9 @@
+<h1>Marvel Snap Deck Randomiser</h1>
+
+<p *ngIf="!deck"><em>Loading...</em></p>
+
+<div *ngIf="deck" class="card-display">
+  <div *ngFor="let card of deck">
+      <img src={{card.picUrl}} class="card-image" width="100%">
+  </div>
+</div>
